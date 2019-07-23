@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="spinner-border"></div>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <img id="logo" class="d-none d-sm-none d-md-none d-lg-block" src="./images/amazonlogo.jpg" alt="">
+                <img id="mcart"  class=" d-lg-none d-sm-inline-block d-md-inline-block d-inline-block" src="images\cartimg.jpg" alt="">
+                <!-- <p id="number" class="d-lg-none d-sm-block d-md-block d-blcok border-radius-15">1</p> -->
+                <button id="notbtn" type="button" class=" w-sm-25 btn btn-primary d-lg-none d-sm-inline-block d-md-inline-block d-inline-blcok">
+                    <span class="badge badge-light">4</span>
+                      </button>
+            
+            </a>
+            <img id="msrchimg" data-toggle="modal" data-target="#exampleModal" class=" w-sm-50 w-md-25 d-lg-none inl-blck ml-sm-5 ml-md-auto"
+                src="./images/search.jpg" alt="">
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Search Here</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="d-flex">
+                                    <input type="Serch" class="form-control form-control-lg">
+                                    <img id="msrchimg1" data-toggle="modal" data-target="#exampleModal" class=" w-sm-50 w-md-25 d-lg-none inl-blck ml-sm-5 ml-md-auto"
+                                        src="./images/search.jpg" alt="">
+
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item d-lg-none active">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Home</a>
+                    </li>
+                    <li class="nav-item  d-lg-none active">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Furniture</a>
+                    </li>
+                    <li class="nav-item d-lg-none active">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Electronincs</a>
+                    </li>
+                    <li class="nav-item  d-lg-none active">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Apparel</a>
+                    </li>
+                    <li class="nav-item  d-lg-none active">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Music</a>
+                    </li>
+                    <li class="nav-item  d-lg-none active">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">E-Books</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">MyAccount <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Wishlist</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Mycart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CheckOut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 d-sm-none d-none d-lg-block " id="search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 d-sm-none d-none d-lg-block " type="submit">Search</button>
+
+                </form>
+            </div>
+        </nav>
+        <div id="logodiv" class="row d-block d-sm-block d-md-block d-lg-none d-flex flex-row justify-content-md-center text-center">
+            <div class="col-3">
+            </div>
+            <img id="mlogo" src="./images/amazonlogo.jpg" alt="">
+            <br>
+            <h6>Welcome to Amazon</h6>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+
+    <div class="d-none d-sm-none d-md-none d-lg-inline-flex" id="row1">
+
+        <div class="active" id="col1">Home
+        </div>
+        <div id="col2">Furniture
+        </div>
+        <div id="col3">Electronincs
+        </div>
+        <div id="col4">Apparel
+        </div>
+        <div id="col5">Music
+        </div>
+        <div id="col6">E-Books
+        </div>
+    </div>
+
+    <div class="con">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" style="color:black" aria-current="page"><strong>CheckOut</strong></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div id="col1" class="col-lg-8 col-sm-12 col-md-12 mt-3">
+            <div class="row border mr-4 ml-2 bg-light">
+                <div class="flex  ml-4" id="chckmethod">
+                    <ol>
+                        <li style="color:blue"><a href="#"><strong>CheckOut Method</strong></a></li>
+                    </ol>
+                    <div>
+                        <p>CheckOut as a guest or Registter</p>
+                        <p><em>Register With us for future convinience</em></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                    No thanks,CheckOut as a guest
+                                    </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                  Register
+                                    </label>
+                        </div>
+                        <p><strong>Why sgould you register with us?</strong></p>
+                        -<small>
+                                Fast and ready CheckOut
+                        </small><br>
+                        <button class="btn btn-primary">Continue</button>
+                    </div>
+
+
+                </div>
+
+                <div class="ml-4 mt-5">
+                    <p><strong>Login to your Account</strong></p>
+                    <p><em>already registered! your account details</em></p>
+                    <form>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" readonly class="form-control-plaintext ml-4" id="staticEmail" value="email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control  ml-4" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Login</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="row border mr-4 ml-2 mt-1 bg-light">
+
+                <form class="ml-4">
+                    <div>
+                        <ul type="none">
+                            <li style="color:blue"><a href="#"><strong>2.Billing Information</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-lg-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6 col-lg-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>AndhraPradesh</option>
+                                  <option>Karnataka</option>
+                                  
+                                </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                 Remember Me
+                                </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+            <div class="row border mr-4 ml-2 mt-2 bg-light">
+
+                <div class="ml-4"><strong style="color:blue"><a href="#">3.Shipping information</a></strong><br>
+                    <p>Pay on Delivery(Cash/Card)</p>eligible <a href="#" style="text-decoration:none">What is this?</a>
+                    <br> <a href="#" color="lightgreen" style="text-decoration:none" style="text-decoration:aquamarine:none">In stock.</a>
+                    <br> <b>Get it as soon as Mon,Feb 20- Fir,Feb 25 </b>
+                    <b class="d-none d-sm-none d-md-none d-lg-block"> when you choose Free Delivery on eligible orders at checkout <a href="">Details</a> </b>                    <br>
+                </div>
+
+            </div>
+            <div class="row border mr-4 ml-2 mt-2 bg-light">
+                <div class="ml-4"><strong style="color:blue"><a href="#">4.Shipping method</a></strong><br>
+                    <p>Pay on Delivery(Cash/Card)</p>eligible <a href="#" style="text-decoration:none">What is this?</a>
+                    <br> <a href="#" color="lightgreen" style="text-decoration:none" style="text-decoration:aquamarine:none">In stock.</a>
+                    <br> <b>Get it as soon as Mon,Feb 20- Fir,Feb 25 </b>
+                    <b class="d-none d-sm-none d-md-none d-lg-block"> when you choose Free Delivery on eligible orders at checkout <a href="">Details</a> </b>                    <br>
+                </div>
+            </div>
+            <div class="row border mr-4 ml-2 mt-2 bg-light">
+                <div class="ml-4"><strong style="color:blue"><a href="#">5.Payment Information</a></strong><br>
+                    <p>Pay on Delivery(Cash/Card)</p>eligible <a href="#" style="text-decoration:none">What is this?</a>
+                    <br> <a href="#" color="lightgreen" style="text-decoration:none" style="text-decoration:aquamarine:none">In stock.</a>
+                    <br> <b>Get it as soon as Mon,Feb 20- Fir,Feb 25 </b>
+                    <b class="d-none d-sm-none d-md-none d-lg-block"> when you choose Free Delivery on eligible orders at checkout <a href="">Details</a> </b>                    <br>
+                </div>
+            </div>
+            <div class="row border mr-4 ml-2 mt-2 bg-light">
+                <div class="ml-4"><strong style="color:blue"><a href="#">6.Order Reviews</a></strong><br>
+                    <p>Pay on Delivery(Cash/Card)</p>eligible <a href="#" style="text-decoration:none">What is this?</a>
+                    <br> <a href="#" color="lightgreen" style="text-decoration:none" style="text-decoration:aquamarine:none">In stock.</a>
+                    <br> <b>Get it as soon as Mon,Feb 20- Fir,Feb 25 </b>
+                    <b class="d-none d-sm-none d-md-none d-lg-block"> when you choose Free Delivery on eligible orders at checkout <a href="">Details</a> </b>                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="col2" class="col-lg-4 border bg-light d-sm-none d-md-none d-lg-block">a</div>
+    </div>
+
+    </div>
+    <div class="row  mr-5 ml-4 mt-2 bg-light d-flex justify-content-between d-lg-none">
+        <div class="border d-flex col-sm-12 col-md-12">
+            <div class="col-md-4">
+                <button class="col-6"> <img src="./images/plus.jpg" width:="20px"
+                height="20px" alt="">
+            </button>
+            </div>
+            <div class="col-md-4 text-center">My Account</div>
+            <div class="col-md-4 ml-5">
+
+
+
+                <!-- <button class="col-6" data-toggle="collapse" data-target="#myAcc" >
+                        <img data-toggle="collapse" data-target="myAcc" src="./images/rightarrow.jpg" width:="20px"
+                        height="20px" alt="">
+                </button>
+                <div class="collapse" id="myAcc">
+                    <ul>
+                        <li>Login</li>
+                        <li>Signup</li>
+
+                    </ul>
+                </div> -->
+
+                <button class="col-12 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                                <img data-toggle="collapse" class="justify-content-sm-start justify-content-md-start" data-target="#drop" src="./images/rightarrow.jpg" width:="20px"
+                                height="20px" alt="">
+                              </button>
+
+                <div class="col-12 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class=" col-12 nav-item  active">
+                            <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row  mr-5 ml-4 mt-2 bg-light d-flex justify-content-between d-lg-none">
+        <div class="border d-flex col-sm-12 col-md-12">
+            <div class="col-sm-1 col-md-4">
+                <button> <img src="./images/minus.jpg" width:="20px"
+                height="20px" alt="">
+            </button>
+            </div>
+            <div class="col-md-4 text-center">Information</div>
+            <div class="col-md-4 ml-5">
+
+                <button class="col-sm-12 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                                <img data-toggle="collapse" class="justify-content-sm-start justify-content-md-start" data-target="#drop" src="./images/downarrow.jpg" width:="20px"
+                                height="20px" alt="">
+                              </button>
+
+                <div class="col-sm-12 collapse navbar-collapse" id="navbarSupportedContent1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    <div class="row mt-5 text-center">
+        <div class="col-12">
+            <a href="#">About Us</a>|<a href="#">Customer Services</a>|<a href="#">Subscribe Here</a>
+            <p id="secondlink"><a href="#">Site Map</a>|<a href="#">Search Terms</a>|<a href="#">Advance Search</a>|
+                <a href="#">Order & Returns</a>|
+                <a href="#">Help</a>|
+                <a href="#">Contact us</a>
+            </p>
+            <h6>@copyright the information</h6>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
